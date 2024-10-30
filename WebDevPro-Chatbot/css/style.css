@@ -1,0 +1,378 @@
+body {
+    font-family: Arial, sans-serif; /* Schriftart */
+    margin: 0; /* Entfernt den standardmäßigen Außenabstand des Browsers um den Body */
+    padding: 0; /* Entfernt den standardmäßigen Innenabstand des Browsers um den Body */
+    background-color: #f4f4f9; /* Hintergrundfarbe */
+}
+header, footer {
+    background-color: #0b0055;
+    color: white; /* Textfarbe */
+    padding: 1em; /* Innenabstand zu Header, Footer */
+    text-align: center; /* Zentriert */
+}
+footer {
+  padding: 1.5em 0; /* Fügt zusätzlichen vertikalen Innenabstand zum Footer hinzu */
+  position: relative; /* Positioniert das Element relativ zu seiner normalen Position */
+  width: 100%; /* Setzt die Breite auf 100% */
+}
+
+footer p {
+  margin: 0.5em 0;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none; /* Entfernt Link Unterstrich */
+}
+
+footer a:hover {
+  color: #fff;
+}
+  
+nav {
+  background-color: #0b0055;
+  padding: 1em; /* Innenabstand */
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none; /* Entfernt die standardmäßigen Aufzählungszeichen für die Liste */
+  display: flex; /* Aktiviert Flexbox für die Navigation, um die Listenelemente horizontal anzuordnen */
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin-right: auto; /* Drückt das Logo nach links */
+}
+
+.logo img {
+  height: 40px; /* Logo-Größe */
+}
+
+  
+table {
+    width: 80%;
+    margin: 2em auto;
+    border-collapse: collapse; /* Entfernt doppelte Ränder */
+    border-radius: 10px; /* Abgerundete Ecken */
+    overflow: hidden; /* Versteckt überlaufende Ecken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten am rand */
+}
+
+table thead {
+    background-color: #0b0055; /* Hintergrundfarbe Kopfzeile */
+    color: white; /* Textfarbe Kopfzeile */
+}
+
+table th {
+    padding: 1em; 
+    text-align: left; /* Text linksbündig */
+}
+
+table tbody tr {
+    background-color: #ffffff; /* Weißer Hintergrund für die Datenzeilen */
+    transition: background-color 0.3s; /* Sanfter Übergang bei Hover */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Hintergrund für gerade Zeilen (Abwechselnder Farbenwechsel) */
+}
+
+table tbody tr:hover {
+    background-color: #e9ecef; /* Hintergrundfarbe bei Hover */
+}
+
+table td {
+    padding: 1em; 
+    border: 1px solid #ddd; /* Graue Randlinie */
+    text-align: left; 
+}
+
+
+
+.chatbot-container {
+    width: 80%;
+    max-width: 600px; /* Maximalbreite für den Container */
+    margin: 2em auto; /* Zentriert den Container auf der Seite */
+    margin-bottom: 10px; /* Abstand zum Eingabe feld */
+}
+
+/* Chatbox */
+.message-display {
+    width: 80%;
+    max-width: 1000px; /* Chatbox Breite */
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 400px; /* Platzhalterhöhe */
+}
+
+.message-placeholder {
+    color: #888;
+    font-size: 1.1em;
+    padding: 1em;
+}
+
+.chat-message {
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    max-width: 80%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.chat-message.user {
+    background-color: #d1e7ff;
+}
+
+.chat-message.bot {
+    background-color: #f1f1f1;
+}
+
+
+.input-form {
+    display: flex; /* Aktiviert Flexbox für das Formular */
+    justify-content: center; /* Zentriert die Elemente im Formular */
+    align-items: center; 
+    gap: 10px; /* Abstand zwischen Eingabefeld und Button */
+}
+
+input[name="prompt"] {
+    flex: 1; /* Das Eingabefeld nimmt den verfügbaren Platz ein */
+    min-width: 500px; /* Minimale Breite des Eingabefelds */
+    max-width: 600px; /* Maximale Breite des Eingabefelds */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer; /* Bei Hover wird Cursor zum Zeigefinger */
+    transition: 0.3s;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Zeilenumbruch nicht erlauben */
+    padding: 2em 0;
+}
+
+.intro .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.intro-text, .intro-image {
+    flex: 1 1 45%;
+    max-width: 500px;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlights-Section (Warum uns und Technologiestack) */
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em 0;
+    background-color: #f9fafb;
+}
+
+.highlight {
+    flex: 1 1 45%;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlight h2 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 1em;
+}
+
+.highlight ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlight ul li {
+    background-color: #eef3f9;
+    margin-bottom: 0.5em;
+    padding: 0.8em;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.highlight ul li i {
+    color: #007bff;
+    margin-right: 0.5em;
+}
+
+
+/* CTA-Section */
+.cta {
+    text-align: center;
+    padding: 2em;
+    background-color: #0b0055;
+    color: white;
+    margin-top: 2em;
+}
+
+.cta h2 {
+    font-size: 1.8em;
+}
+
+.cta p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.cta .button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta .button:hover {
+    background-color: #0056b3;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.contact-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-container form label {
+    font-weight: bold; /* Fett Buchstaben */
+}
+
+.contact-container form input[type="text"],
+.contact-container form input[type="email"],
+.contact-container form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-container form textarea {
+    resize: vertical; /* Erlaubt nur vertikales Anpassen der Größe */
+}
+
+
+
+.contact-container form input[type="submit"] {
+    padding: 1em 2em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-container form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.impressum-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    line-height: 1.6em;
+    color: #333;
+}
+
+.impressum-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #0b0055;
+}
+
+.impressum-container p {
+    margin-bottom: 1em;
+    font-size: 1em;
+}

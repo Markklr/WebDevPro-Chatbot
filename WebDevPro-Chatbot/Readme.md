@@ -26,7 +26,7 @@ img/: Enthält die Bilddateien der verschiedenen Webentwicklungsservices.
 ## Installation und Konfiguration
 Projekt in das Root-Verzeichnis deines Webservers klonen.
 
-git clone https://github.com/Markklr/webdev-chatbot.git
+git clone https://github.com/Markklr/WebDevPro-Chatbot.git
 API-Schlüssel konfigurieren: Öffne die Datei config/config.php und trage deinen Groq-API-Schlüssel ein:
 
 <?php

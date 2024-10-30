@@ -17,11 +17,11 @@ chatbot.php: Controller-Datei für den Chatbot, die die Anfragen der Kunden vera
 produkte.php: Übersicht aller angebotenen Webentwicklungsdienstleistungen in Form einer Tabelle.
 kontakt.php: Seite mit einem Kontaktformular.
 impressum.php: Enthält das Impressum der Webseite.
-model/produktdaten.php: Enthält die Produkt- bzw. Dienstleistungsdaten als Array.
-model/funktionen.php: Hilfsfunktionen.
+model/produktdaten.php: Enthält die Produktdaten als Array.
+model/funktionen.php: Alle Funktionen.
 view/cta.php, view/menue.php, view/bottom.php: Layout-Dateien, die das Design und das Navigationsmenü der Webseite strukturieren.
 css/style.css: CSS-Datei zur Gestaltung der Webseiten.
-img/: Enthält die Bilddateien der verschiedenen Webentwicklungsservices.
+img/: Enthält die Bilddateien der App.
 
 ## Installation und Konfiguration
 Projekt in das Root-Verzeichnis deines Webservers klonen.
@@ -41,4 +41,4 @@ return array(
 Produktdaten anpassen: In der Datei model/produktdaten.php kannst du die Dienstleistungsdaten anpassen.
 
 
-Webseite aufrufen: Öffne deinen Webbrowser und rufe die Webseite auf (z. B. http://localhost/webdev-chatbot), um den Chatbot zu testen und Anfragen zu stellen.
+Webseite aufrufen: Öffne deinen Webbrowser und rufe die Webseite auf (z. B. http://localhost/webdevpro-chatbot), um den Chatbot zu testen und Anfragen zu stellen.

@@ -32,7 +32,7 @@ API-Schlüssel konfigurieren: Öffne die Datei config/config.php und trage deine
 <?php
 return array(
     'llm_model' => 'gemma2-9b-it', // Modell für den Chatbot
-    'groq_api_key' => 'gsk_fBR...', // Dein API-Schlüssel
+    'groq_api_key' => 'gsk_aBc...', // Dein API-Schlüssel
     'ollama_url' => 'https://api.groq.com/openai/v1/chat/completions',
     'system_prompt' => 'Du bist ein professioneller Verkaufsassistent für Webentwicklung, der potenziellen Kunden unsere Dienstleistungen erklärt. Unser Firmenname ist WebDevPro'
 );
